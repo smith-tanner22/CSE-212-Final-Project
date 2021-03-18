@@ -51,7 +51,7 @@ Let's talk a bit about performance of stacks.
 |```size()```| O(1) |
 |```empty()```| O(1)|
 
-The best way to describe it is like this:
+The best way to describe it is like this: (Just because its constant)
 
 <img src="notGreat.jpg" alt="notGreatMeme" width="200"/>
 
