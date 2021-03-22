@@ -12,7 +12,7 @@ Welcome to this wonderful tutorial homepage. Provided below are links to several
 * [Sets](setTutorial.md)
 * [Trees](treesTutorial.md)
 
-Each of these modules will contain a plethora of information that I hope will be beneficial for you, and ultimately aid you in your undending quest to understand data structures.
+Each of these modules will contain a plethora of information that I hope will be beneficial for you, and ultimately aid you in your unending quest to understand data structures.
 
 <center> 
 <h1> Contact Information </h1> 
