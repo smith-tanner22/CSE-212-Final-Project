@@ -44,4 +44,35 @@ Woah, 'Mushrooms' and 'Olives' changed places. And why is that? That's right, be
 
 Wait like hashbrowns? No, I don't have to make everything about food in my tutorials, okay? Hashing is basically just the way we use the set, we are able to add, remove, and test for membership in O(1) time, we'll come back to performance in a second.
 
+For strings and floats we can use this formula:
+
+```
+index(n) = hash(n) % sparse_list_size
+```
+The <strong>hashing function</strong> will convert non-integers into integers so that modulo operator can be used.
+
+The values returned by the hash function will vary everytime you run a python script, but they will be consistent while you are running a script to completion.
+
+Unfortunately, not every situation can be hashed. Luckily we have ways of dealing with these issues when they arise.
+
+* Step 1: <strong>Stopping being a baby</strong>
+
+* Step 2: <strong>Open addressing:</strong>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - This tells us to move to the next available space. Kind of like a board game when you aren't suppose to share a space with another player.
+
+* Step 3: <strong> Chaining</strong>:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - We can make a list a of values that occupy the same space, this doesn't create clusters of conflict.
+
+## Performance
+
+|Set Operation| Performance|
+|---------------|-------------|
+|```add(value)```| O(1)        |
+|```remove(value)``` | O(1)|
+|```member(value)```| O(1) |
+|```size()```| O(1)|
+
+
 
