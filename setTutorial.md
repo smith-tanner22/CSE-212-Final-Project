@@ -6,7 +6,7 @@ Your stomach starts growling after that last tutorial. You look at the clock but
 
 You get on the your phone, open the Dominoes app and start creating your pizza. You decide to go with build your own 4 topping pizza. After you finish and submit your order, you get a call from Dominoes and they say, "Hey we just got your order for that 4 topping pizza, does it matter what toppings go first?" You say, "Uhhh no just as long as it is on the pizza." He replies, "So you are saying order doesn't matter?" "Yes that is what I am saying." 
 
-![pizza](pizza.png)
+<img src="pizza.png" alt="notGreatMeme" width="250"/>
 
 Hmmm that sounds like a <strong>set data structure</strong> to me!
 
@@ -94,10 +94,14 @@ print(yourPizza - myPizza) # We can also just use the - operator to find the dif
 <strong>Output:</strong>
 
 ```python
+Originals:
 {'Bacon', 'Pepperoni', 'Olive', 'Mushrooms'} #myPizza
 {'cheese', 'Pineapple', 'Pepperoni', 'Bacon'} #yourPizza
 
+Difference between myPizza and yourPizza using the difference function:
 {'Olive', 'Mushrooms'} # These are unique to myPizza
+
+Difference between yourPizza and myPizza using the - operator:
 {'cheese', 'Pineapple'} # These are unique to yourPizza
 ```
 

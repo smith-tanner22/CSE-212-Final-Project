@@ -1,7 +1,10 @@
 print()
 # Declare a new set called newSet1 and put the values 1, 4, 7, 9, 3, 10 in it and then print it
 
-newSet1 = {1, 4, 7, 9, 3, 10}
+newSet1 = {1, 4, 7, 9, 3, 10} 
+    # Alternatively we can declare a new set like this:
+    # newSet1 = set([1, 4, 7, 9, 3, 10])
+    # if you put print(type(newSet1)) you will see that they are both sets
 print("My new set:")
 print(newSet1)
 print()
