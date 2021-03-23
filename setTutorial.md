@@ -10,7 +10,7 @@ You get on the your phone, open the Dominoes app and start creating your pizza. 
 
 Hmmm that sounds like a <strong>set data structure</strong> to me!
 
-That long intro was to introduce our new data structure tutorial <strong>sets</strong>! There are a few key elements that sets unique to other data structures, let's go over them:
+That long intro was to introduce our new data structure tutorial <strong>sets</strong>! There are a few key elements that sets is unique to other data structures, let's go over them:
 
 * Order is not important
 * No duplicates allowed
@@ -20,7 +20,7 @@ That long intro was to introduce our new data structure tutorial <strong>sets</s
 
 Lets see how it looks in code:
 ```python
-# Hey look its 3/4 toppings of our pizza
+# Hey look its 3 out of the 4 toppings of our pizza
 pizzaSet = set(["Pepperoni", "Bacon", "Mushrooms"])
 print(pizzaSet)
 
@@ -74,5 +74,36 @@ Unfortunately, not every situation can be hashed. Luckily we have ways of dealin
 |```member(value)```| O(1) |
 |```size()```| O(1)|
 
+Let's try working out an example. Let's say we wanted to find the elements in a given set that are not in another set. We could try something like this:
 
+```python
+myPizza = {"Pepperoni", "Olive", "Mushrooms", "Bacon"} # My pizza
+yourPizza = {"Pepperoni", "cheese", "Bacon","Pineapple"} # Your pizza
 
+print("Originals:")
+print(myPizza)
+print(yourPizza)
+
+print("Difference between myPizza and yourPizza using the difference function:")
+print(myPizza.difference(yourPizza)) # We can use the difference function to make the calculation
+
+print("Difference between yourPizza and myPizza using the - operator:")
+print(yourPizza - myPizza) # We can also just use the - operator to find the difference! Handy!
+```
+
+<strong>Output:</strong>
+
+```python
+{'Bacon', 'Pepperoni', 'Olive', 'Mushrooms'} #myPizza
+{'cheese', 'Pineapple', 'Pepperoni', 'Bacon'} #yourPizza
+
+{'Olive', 'Mushrooms'} # These are unique to myPizza
+{'cheese', 'Pineapple'} # These are unique to yourPizza
+```
+
+Great now you get to give it a shot. Follow the links to the problem and then refer to the solution once you are done to compare your answers.
+
+* [Set Problem](setProblem.py)
+* [Set Problem Solution](setProblemSolution.py)
+
+## Congrats you finished the Sets Tutorial!
