@@ -22,14 +22,14 @@ Now, how do we go about putting data into this data structure? Let's go through 
  * If the data is <strong>less than</strong> the parent node, then it is put into the left subtree
  * If duplicates are allowed than the duplicated can be in the left or right subtree of the root.
 
- ## Balanced VS Unbalanced
+ ## **Balanced VS Unbalanced**
  These trees are great for looking things up and we get great performance too! O(log n)! (More on that in a little bit). However this is only the case if the tree is "balanced" as we call it. When a tree becomes unbalanced then we run into performance issues. O(n) :( at this point we should just use a different data structure. Let's see what an unbalanced tree looks like:
 
  ![Unbalanced Tree](unbalanced.jpg)
 
  Notice how every subsequent number is just bigger than the other? This is what happens in an unbalanced tree, so try to avoid this. There are much better data structures if you just wanted to do this. 
 
- ## Node Class
+ ## **Node Class**
 
  There are a couple of things that need to be done to begin working with trees, one of those things is initializing a node class
 
@@ -57,7 +57,7 @@ Now our tree is looking something like this:
 
 ![basic tree](basicTree.jpeg)
 
-## Recursion
+## **Recursion**
 
 Recursion is fundamental in truly understanding binary trees. I won't go into depth here in this tutorial but we will go over it briefly to solidify understanding.
 
@@ -85,6 +85,24 @@ def hello_world_forever():
         print("Hello World")
         hello_world_forever(count - 1) #smaller problem
 ```
+
+## **Performance**
+
+It's always important to know what the performance of data structures are, this is the performance when we use binary trees. Most of them are O(log n)! This is super ideal!
+
+|Binary Tree Operation| Performance|
+|---------------|-------------|
+|```insert(value)```| O(log n)|
+|```remove(value)``` | O(log n)|
+|```contains(value)```| O(log n) |
+|```traverse_forward```| O(log n)|
+|```traverse_backward```| O(log n)|
+|```height(node)```| O(log n)|
+|```size()```| O(1)|
+|```empty()```| O(1)|
+
+## **Example**
+
 Alright, now that we got that out of the way let's trying working out an example problem:
 
 A binary tree is what we consider a "non-linear data structure" which means there is more than one way to traverse through the data. In this example problem we go "inorder" fashion.
@@ -140,7 +158,7 @@ print(root.inorder(root))
 # Expected output:
 # [6, 10, 19, 24, 25, 31, 67]
 ```
-Getting it so far? Good we will give you a chance to do it yourself now! You will be asked to do a "Pre-order Traversal" and a "Post-order Traversal"
+Getting it so far? Good, we will give you a chance to do it yourself now! You will be asked to do a "Pre-order Traversal" and a "Post-order Traversal"
 
 The problem can be found down below. Once you are done compare your answers to the solution provided and making any adjustments you need.
 

@@ -40,7 +40,7 @@ Notice when we hit the play button again:
 ```
 Woah, 'Mushrooms' and 'Olives' changed places. And why is that? That's right, because order doesn't matter!
 
-## Hashing
+## **Hashing**
 
 Wait like hashbrowns? No, I don't have to make everything about food in my tutorials, okay? Hashing is basically just the way we use the set, we are able to add, remove, and test for membership in O(1) time, we'll come back to performance in a second.
 
@@ -65,7 +65,7 @@ Unfortunately, not every situation can be hashed. Luckily we have ways of dealin
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - We can make a list a of values that occupy the same space, this doesn't create clusters of conflict.
 
-## Performance
+## **Performance**
 
 |Set Operation| Performance|
 |---------------|-------------|
@@ -73,6 +73,8 @@ Unfortunately, not every situation can be hashed. Luckily we have ways of dealin
 |```remove(value)``` | O(1)|
 |```member(value)```| O(1) |
 |```size()```| O(1)|
+
+## **Example**
 
 Let's try working out an example. Let's say we wanted to find the elements in a given set that are not in another set. We could try something like this:
 
