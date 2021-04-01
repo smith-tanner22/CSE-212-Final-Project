@@ -25,17 +25,18 @@ class Node: #defines the structure of the node
         print(self.data),
         if self.right:
             self.right.printTheTree()
+            
+    def preOrder(self, root):
+        # START CODING HERE:
+        # this is our pre order traversal
+        # the order goes from root, to left, to right
+        pass
 
-    def inorder(self, root):
-        #this is where we start coding:
-        #this is our inorder traversal
-        #the order goes from left, to root, to right
-        newList = [] #need somewhere to put the information
-        if root:
-            newList = self.inorder(root.left)
-            newList.append(root.data)
-            newList = newList + self.inorder(root.right)
-        return newList
+    def postOrder(self, root):
+        # START CODING HERE:
+        # this is our post order traversal
+        # the order goes from left, to right, to root
+        pass
 
 root = Node(10) #this is our root number
 root.insert(24)
@@ -44,6 +45,10 @@ root.insert(19)
 root.insert(6)
 root.insert(31)
 root.insert(25)
-print(root.inorder(root))
+
+print(root.preOrder(root))
 # Expected output:
-# [6, 10, 19, 24, 25, 31, 67]
+# [10, 6, 24, 19, 67, 31, 25]
+print(root.postOrder(root))
+# Expected output:
+# [6, 19, 25, 31, 67, 24, 10]
